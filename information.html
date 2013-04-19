@@ -1,0 +1,172 @@
+<html>
+<head>
+<script language="JavaScript1.1">
+<!--
+
+/*
+JavaScript Image slideshow:
+By JavaScript Kit (www.javascriptkit.com)
+Over 200+ free JavaScript here!
+*/
+
+var slideimages=new Array()
+var slidelinks=new Array()
+function slideshowimages(){
+for (i=0;i<slideshowimages.arguments.length;i++){
+slideimages[i]=new Image()
+slideimages[i].src=slideshowimages.arguments[i]
+}
+}
+
+function slideshowlinks(){
+for (i=0;i<slideshowlinks.arguments.length;i++)
+slidelinks[i]=slideshowlinks.arguments[i]
+}
+
+function gotoshow(){
+if (!window.winslide||winslide.closed)
+winslide=window.open(slidelinks[whichlink])
+else
+winslide.location=slidelinks[whichlink]
+winslide.focus()
+}
+
+//-->
+</script>
+<style type="text/css">
+#info{background-color:#D8D8D8; height:700px; width:700px; border-radius:20px; position:absolute;left:320px; margin:20px;}
+#dash{background-color:#480000;}
+#Places { float: left; border:4px; background:#480000; font-weight: bold; width:200px; height:220px; line-height=150px; margin:20px; position:absolute;left:35px; }
+#head1{font-size:40px; background-color:#080000; font-family:Zapf Chancery, cursive ; font-weight:bold;
+}
+body{background-color:#F1E9E3}
+#places {font-size:20px;}
+#id3{position:absolute; left:800px; margin:20px;}
+#main{width:1100px;height:750px; background-color:#F7BE8D; position:absolute; left:120px; margin:10px; border-radius:25px;}
+h2{color:#660000;}
+h3{color:#660000; }
+h4{color:#660000 ;}
+p{font-family:Times New Roman, serif; font-style:italic; margin:10px;}
+#slide{position:relative; left:35px; top:260px; width:250px;}
+</style>
+</head>
+<body>
+
+<div id="head1" align="center" style="color:white">
+Don't be FUELISH...Join a CARPOOL</div>
+<div id="dash">
+<table cellspacing="10">
+<tr >
+<td><br/></td><td><br/></td><td><br/></td><td><br/></td><td><br/></td><td><br/></td><td><br/></td>
+<td><br/></td>
+<td><br/></td><td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><font size="5.5"><a href="http://localhost/carpool/carpool.htm" style="color:white">Home</a></font></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><font size="5.5" ><a href="http://localhost/carpool/start.html"style="color:white" >Start a Pool</a></font></td>
+
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><font size="5.5" ><a href="http://localhost/carpool/join.html" style="color:white" >Join a Pool</a></font></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+
+<td><font size="5.5" ><a href="http://localhost/carpool/carpool.htm" style="color:white">Logout</a></font></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td><td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><font size="5.5"><a href="http://localhost/carpool/aboutus.html/" style="color:white">About us</a></font></td>
+</tr>
+</table>
+</div>
+<div id="main">
+<div id="info">
+<h2 align="center">INFORMATION regarding Carpool</h2>
+<p>Office goers or commuters who live nearby and have a common destination falls into the category of ‘carpool’ arrangement. In simple terms ‘carpooling’ is cost saving, particularly for those commuters who travel long distances from their residence to office everyday. It is beneficial for those individuals who have limited access to public and private transportation.</p>
+
+<h3>Different CARPOOL categories:</h3>
+<h4>(1) CARPOOL with assigned driver</h4>
+<p>This carpool comprises of one driver with more than one passengers. The vehicle is solely owned by the driver and the passenger pays the fare monthly, weekly, or on a daily basis. This fare includes the fuel, maintenance and parking of the vehicle.</p>
+<h4>(2) Optional CARPOOLing</h4>
+<p>Optional carpooling in simple term means ‘pay when you drive’ and ‘ride free of cost’.
+In this type of carpooling driving is on a rotation basis, either daily, weekly or monthly.
+You are charged when you drive or else it is free of cost.</p>
+<h4>(3) CARPOOL by employer</h4>
+<p>Employer encourage the employees to use the company vehicle for commuting from office to residence. Employees pay the fare for fuel, maintenance and insurance cost.
+This type of carpooling is mutually beneficial to both the employer and employee.</p>
+<h4>CARPOOL programs</h4>
+<p>In certain carpool programs, agencies provide commuters and vehicles to travel to and from office, school or work. Fare is generally decided on the kilometers covered and the maintenance of the vehicle.
+</p>
+</div>
+
+
+<div id="Places" class="names" align="center">
+
+<a href="http://localhost/carpool/join.html" style="color:white">Find a Pool</a><br/><br/>
+
+<a href="http://localhost/carpool/information.html" style="color:white">Information</a><br/><br/>
+
+<a href="http://localhost/carpool/benefits.html" style="color:white">Benefits</a><br/><br/>
+
+<a href="http://localhost/carpool/etiquettes.html" style="color:white">Etiquitte</a><br/><br/>
+
+<a href="http://localhost/carpool/aboutus.html" style="color:white">About us</a><br/><br/>
+
+
+</div>
+<div id="slide" style="border:3px solid black">
+<a href="javascript:gotoshow()"><img src="food1.jpg" name="slide" border=0 width=250 height=260></a>
+<script>
+<!--
+
+//configure the paths of the images, plus corresponding target links
+slideshowimages("carpool.png","carsharing photo.jpg","uow095854.jpg","carpool_2.jpg","cp1.jpg")
+//slideshowlinks("C:\Users\Arti Prasad\Desktop\New folder\","http://food.epicurious.com/run/recipe/view?id=10092","http://food.epicurious.com/run/recipe/view?id=100975","http://food.epicurious.com/run/recipe/view?id=2876","http://food.epicurious.com/run/recipe/view?id=20010")
+
+//configure the speed of the slideshow, in miliseconds
+var slideshowspeed=2000
+
+var whichlink=0
+var whichimage=0
+function slideit(){
+if (!document.images)
+return
+document.images.slide.src=slideimages[whichimage].src
+whichlink=whichimage
+if (whichimage<slideimages.length-1)
+whichimage++
+else
+whichimage=0
+setTimeout("slideit()",slideshowspeed)
+}
+slideit()
+
+//-->
+</script>
+</div>
+</div>
+
+</body>
+</html>

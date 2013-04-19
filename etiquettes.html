@@ -1,0 +1,177 @@
+<html>
+<head>
+<script language="JavaScript1.1">
+<!--
+
+/*
+JavaScript Image slideshow:
+By JavaScript Kit (www.javascriptkit.com)
+Over 200+ free JavaScript here!
+*/
+
+var slideimages=new Array()
+var slidelinks=new Array()
+function slideshowimages(){
+for (i=0;i<slideshowimages.arguments.length;i++){
+slideimages[i]=new Image()
+slideimages[i].src=slideshowimages.arguments[i]
+}
+}
+
+function slideshowlinks(){
+for (i=0;i<slideshowlinks.arguments.length;i++)
+slidelinks[i]=slideshowlinks.arguments[i]
+}
+
+function gotoshow(){
+if (!window.winslide||winslide.closed)
+winslide=window.open(slidelinks[whichlink])
+else
+winslide.location=slidelinks[whichlink]
+winslide.focus()
+}
+
+//-->
+</script>
+<style type="text/css">
+#etiquette{background-color:#D8D8D8; height:1160px; width:700px; border-radius:20px; position:absolute;left:320px; margin:20px;}
+#dash{background-color:#480000;}
+#Places { float: left; border:4px; background:#480000; font-weight: bold; width:200px; height:220px; line-height=150px; margin:20px; position:absolute;left:35px; }
+#head1{font-size:40px; background-color:#080000; font-family:Zapf Chancery, cursive ; font-weight:bold;
+}
+body{background-color:#F1E9E3}
+#places {font-size:20px;}
+
+#main{width:1100px;height:1200px; background-color:#F7BE8D; position:absolute; left:120px; margin:10px; border-radius:25px;}
+h2{color:#660000;}
+h3{color:#660000; }
+h4{color:#660000 ;}
+p{font-family:Times New Roman, serif; font-style:italic; margin:10px;}
+#slide{position:relative; left:35px; top:260px; width:250px;}
+</style>
+</head>
+<body>
+
+<div id="head1" align="center" style="color:white" >
+Don't be FUELISH...Join a CARPOOL</div>
+<div id="dash">
+<table cellspacing="10">
+<tr >
+<td><br/></td><td><br/></td><td><br/></td><td><br/></td><td><br/></td><td><br/></td><td><br/></td>
+<td><br/></td>
+<td><br/></td><td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><font size="5.5"><a href="http://localhost/carpool/carpool.htm" style="color:white">Home</a></font></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><font size="5.5" ><a href="http://localhost/carpool/start.html"style="color:white" >Start a Pool</a></font></td>
+
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><font size="5.5" ><a href="http://localhost/carpool/join.html" style="color:white" >Join a Pool</a></font></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td>
+
+<td><font size="5.5" ><a href="http://localhost/carpool/carpool.htm" style="color:white">Logout</a></font></td>
+<td><br/></td>
+<td><br/></td>
+<td><br/></td><td><br/></td>
+<td><br/></td>
+<td><br/></td>
+<td><font size="5.5"><a href="http://localhost/carpool/aboutus.html/" style="color:white">About us</a></font></td>
+</tr>
+</table>
+</div>
+<div id="main">
+<div id="etiquette">
+<h2 align="center">ETIQUETTES of Carpool</h2>
+<p>Ensure that a proper decorum is maintained in carpooling. Discipline and manner are the two strong weapons of good carpooling.
+Certain points to be considered for maintaining the carpool decorum are:</p>
+<h4>(1) Monetary aspects</h4>
+<p>One has to decide what fare is to be given based on fuel, maintenance and parking. Also one important thing is to be kept in mind is that when should the fare be collected daily, weekly, or monthly and should be informed in advance.</p>
+<h4>(2) Late comers</h4>
+<p>Carpool management solely depends upon time management. Late comers disrupt the whole process. Strict rules should be established for latecomers. The maximum time for waiting should be fixed up to 5 minutes. To avoid it fix well in advance the meeting point (pick & drop place).</p>
+<h4>(3) Avoiding frequent stopping</h4>
+<p>Frequent stopping in between your office and home or any destination should be avoided. This saves time and late arrival at both the office and back home journey.</p>
+<h4>(4) Substitute</h4>
+<p>Unforeseen can happen anytime. So to be on the safer side other substitute should be kept in mind. For e.g. mechanical breakdown or illness of the driver. A tie up with any automobile association would be of great help.</p>
+<h4>(5) Insurance coverage</h4>
+<p>Necessity to protect yourself under Insurance coverage is an important part of carpooling. Make sure that some amount of insurance policy should be insured.</p>
+<h4>(6) Maintaining your vehicle</h4>
+<p>A well maintained vehicle will consume less fuel in comparison to a poorly maintained vehicle. Ensure that the vehicle is well maintained. This will guarantee a secure, steadfast and comfortable journey.</p>
+<h4>(7)  Mutual co-operation among the riders / members</h4>
+<p>Mutual cooperation among the riders is a must. In between the journey, smoking should be prohibited. Seating arrangements should be proper- small person in the back row as there is less legroom / leg space in some vehicles and big person in the front row. Caring for the fellow passenger would make the journey more comfortable. If you are rider make sure that you should not heart the feeling of car / van / bike owner by unnecessary fingering to his vehicle. If you want to use any thing, ask for it before using.</p>
+<h4>(8) Check all details</h4>
+<p>Before going into any pool check all details of the person(s) details with whom you are planning carpool.</p>
+<h4>(9)  Provide all details</h4>
+<p>Provide all necessary details (relevant & genuine) to the service provider as well as inform your friends / family members about the carpool arrangement so that they were well informed about it - in case of any incidence / mishap.</p>
+</div>
+
+
+<div id="Places" class="names" align="center">
+
+<a href="http://localhost/carpool/join.html" style="color:white">Find a Pool</a><br/><br/>
+
+<a href="http://localhost/carpool/information.html" style="color:white">Information</a><br/><br/>
+
+<a href="http://localhost/carpool/benefits.html" style="color:white">Benefits</a><br/><br/>
+
+<a href="http://localhost/carpool/etiquettes.html" style="color:white">Etiquitte</a><br/><br/>
+
+<a href="http://localhost/carpool/aboutus.html" style="color:white">About us</a><br/><br/>
+
+
+</div>
+<div id="slide" style="border:3px solid black">
+<a href="javascript:gotoshow()"><img src="food1.jpg" name="slide" border=0 width=250 height=260></a>
+<script>
+<!--
+
+//configure the paths of the images, plus corresponding target links
+slideshowimages("carpool.png","carsharing photo.jpg","uow095854.jpg","carpool_2.jpg","cp1.jpg")
+//slideshowlinks("C:\Users\Arti Prasad\Desktop\New folder\","http://food.epicurious.com/run/recipe/view?id=10092","http://food.epicurious.com/run/recipe/view?id=100975","http://food.epicurious.com/run/recipe/view?id=2876","http://food.epicurious.com/run/recipe/view?id=20010")
+
+//configure the speed of the slideshow, in miliseconds
+var slideshowspeed=2000
+
+var whichlink=0
+var whichimage=0
+function slideit(){
+if (!document.images)
+return
+document.images.slide.src=slideimages[whichimage].src
+whichlink=whichimage
+if (whichimage<slideimages.length-1)
+whichimage++
+else
+whichimage=0
+setTimeout("slideit()",slideshowspeed)
+}
+slideit()
+
+//-->
+</script>
+</div>
+</div>
+
+</body>
+</html>

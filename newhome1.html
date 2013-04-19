@@ -1,0 +1,249 @@
+
+<html>
+<head>
+    <title>Untitled Page</title>
+    <script type="text/javascript" src="jquery-1.7.2.js"></script>
+    <script type="text/javascript" >
+        $(document).ready(function () {
+            $("#slide1").mouseover(function () {
+                $("#slide1").animate({ left: "10%" }, "slow");
+            });
+
+            $("#slide1").mouseout(function () {
+                $("#slide1").animate({ left: "70%" }, "slow");
+            });
+
+            $("#slide2").mouseover(function () {
+                $("#slide2").animate({ left: "20%" });
+            });
+
+            $("#slide2").mouseout(function () {
+                $("#slide2").animate({ left: "85%" });
+            });
+
+
+        });
+</script>
+
+    <style type="text/css">
+	
+        #login{ float:left; margin:8px; height:250; width:243; border-radius:20px;}
+        h3{ font-family:Zapf Chancery, cursive ; font-weight:bold;
+}        p{font-family:Zapf Chancery, cursive ; font-weight:bold;}
+        #para1
+        {
+            -moz-border-radius: 15px;
+             border-radius: 15px;
+             background: rgba(248, 248, 255, 0.2);
+			 position:absolute;
+			 width:30%;
+			 height:40%;
+			 left:2%;
+			 top:50%;
+            
+            
+            }
+			
+			#para2
+        {
+            -moz-border-radius: 15px;
+             border-radius: 15px;
+             background: rgba(248, 248, 255, 0.2);
+			 position:absolute;
+			 width:30%;
+			 height:40%;
+			 left:35%;
+			 top:50%;
+            
+            
+            }
+       
+       
+       #para
+       {
+           font-family:Comic Sans MS;
+       }
+       #lgn
+       {
+           font-family:Comic Sans MS;
+       }
+       
+       #slider
+        {
+           height:100%;
+            
+            overflow:hidden;
+            
+           
+            
+            }
+    .slide1
+    {
+        
+        position:absolute;
+        left:70%;
+        top:0%;
+        height:100%;
+        overflow:hidden;
+        
+        
+        }
+        
+        .slide2
+    {
+        
+        position:absolute;
+        left:85%;
+        height:100%;
+        top:0%;
+        overflow:hidden;
+   }
+        
+        #logo
+        {
+            position:absolute;
+            left:0%;
+            width:100%;
+            height:100%;
+            overflow:hidden;
+            }
+			
+			.left{position:absolute;
+            left:0%;
+            width:100%;
+            height:100%;}
+			
+			#bot{
+			position:absolute;
+			
+			top:97%;
+			left:3%;
+			}
+			.padd{
+			padding-right:10px;
+			padding-left:10px;
+			}
+			
+			#img{
+			position:absolute;
+			left:30%;
+			top:2%;
+			height:10%;
+			width:20%;
+			overflow::visible;
+			
+			
+			
+			
+			}
+     
+     
+    
+    
+    </style>
+
+
+</head>
+<body style="overflow: hidden" bgcolor="#B2CEEA"> 
+<div id="login" style="border:3px solid black">
+<form id="test" method="post" action="trial.php">
+<table>
+<tr>
+<td bgcolor=#660099 colspan="3"><h1 style="color:white;">Login</h1><td/>
+<tr/>
+
+<tr><td><br/></td></tr>
+<tr>
+<td>Username:</td>
+<td><input type="text" name="loginID" value=""></td>
+</tr><td><br/></td></tr>
+<tr>
+<td>Password:</td>
+<td><input type="password" name="password" value=""></td>
+
+</tr>
+<tr><td><br/></td></tr>
+<tr>
+<td><a href="<input type="submit" name="newuser" value="New User"></td>
+<td><input type="submit" name="login" value="Login"></td>
+</tr>
+
+
+</table>
+
+</form>
+</div>
+<div id="img">
+
+
+<!--<img src="anim.gif" height=300 width=200 >
+-->
+</div>
+
+
+<br />
+<br />
+<table id="para1" class="para1" style="border:3px solid black">
+<tr><td><h3 align=center>CARPOOL<h3></h3></td></tr>
+<tr>
+<td><p>Carpool  is the reason behind happpiness of commuters.
+<p/></td>
+</tr>
+<tr>
+<td>
+<p>They reduce environmental pollution, traffic congestion and save fuel costs and also relieve a large number of people from the stress of driving.</p>
+</td>
+</tr>
+<tr>
+<td><p>
+So why wait, join the enthrailing word of carpool and Tourpool !!! </p>
+</td>
+</tr>
+</table>
+
+<table id="para2" class="para2" style="border:3px solid black">
+<tr><td><h3 align=center>TOURPOOL<h3></h3></td></tr>
+<tr>
+<td><p>
+tourpool are the reason behind happpiness of commuters.</p>
+</td>
+</tr>
+<tr>
+<td><p>
+They reduce environmental pollution, traffic congestion and save fuel costs and also relieve a large number of people from the stress of driving.</p>
+</td>
+</tr>
+<tr>
+<td><p>So why wait, join the enthrailing word of carpool and Tourpool !!! </p>
+</td>
+</tr>
+</table>
+</p>
+
+
+</form>
+</div>
+<a href="http://google.com">
+<img src="blue12.jpg" id="slide1"  class="slide1" /></a>
+<div id="slider">
+<a href="http://google.com">
+<img src="tourpoolj1.jpg" id="slide2" class="slide2"  /></a>
+
+</div>
+<div id="bot">
+<table>
+
+<td>
+<a href="http://google.com" class="padd">About Us</a>
+<a>|</a>
+<a href="http://google.com" class="padd">Contact Us</a>
+<a>|</a>
+<a href="http://google.com" class="padd">Feedback</a>
+<a>|</a>
+<a href="http://en.wikipedia.org/wiki/Disclaimer" class="padd">Disclaimer</a>
+</td>
+</table>
+
+</div>
+</body>
+</html>

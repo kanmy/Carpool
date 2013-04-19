@@ -1,0 +1,204 @@
+﻿
+<html>
+<head>
+<script language="JavaScript1.1">
+<!--
+
+/*
+JavaScript Image slideshow:
+By JavaScript Kit (www.javascriptkit.com)
+Over 200+ free JavaScript here!
+*/
+
+var slideimages=new Array()
+var slidelinks=new Array()
+function slideshowimages(){
+for (i=0;i<slideshowimages.arguments.length;i++){
+slideimages[i]=new Image()
+slideimages[i].src=slideshowimages.arguments[i]
+}
+}
+
+function slideshowlinks(){
+for (i=0;i<slideshowlinks.arguments.length;i++)
+slidelinks[i]=slideshowlinks.arguments[i]
+}
+
+function gotoshow(){
+if (!window.winslide||winslide.closed)
+winslide=window.open(slidelinks[whichlink])
+else
+winslide.location=slidelinks[whichlink]
+winslide.focus()
+}
+
+//-->
+</script>
+    <title>Untitled Page</title>
+    <script type="text/javascript" src="jquery-1.7.2.js"></script>
+    <script type="text/javascript" >
+        $(document).ready(function () {
+            $("#slide1").mouseover(function () {
+                $("#slide1").animate({ left: "16%" });
+            });
+
+            $("#slide1").mouseout(function () {
+                $("#slide1").animate({ left: "70%" });
+            });
+
+            $("#slide2").mouseover(function () {
+                $("#slide2").animate({ left: "24%" });
+            });
+
+            $("#slide2").mouseout(function () {
+                $("#slide2").animate({ left: "85%" });
+            });
+
+            
+        });
+</script>
+
+    <style type="text/css">
+	h3{align:center}
+	body{background:#F7BE8D;}
+	#tourpool{font-size:20px; font-family:Zapf Chancery, cursive ; font-weight:bold;}
+	 #carpool{width:400px; height:280px; position:absolute; left:100px; top:360px; background-color:#480000; border-radius:15px; font-family:Zapf Chancery, cursive ; font-weight:bold;}
+	 #tourpool{width:400px; height:280px; position:absolute; left:520px; top:360px; background-color:#480000; border-radius:15px;}
+        #slide{position:absolute; left:710px; top:8px; width:250px;}
+		#login{ float:left; margin:8px; height:250; width:243; border-radius:20px;}
+       #slider
+        {
+           height:100%;
+            
+            overflow:hidden;
+            
+           
+            
+            }
+    .slide1
+    {
+        
+        position:absolute;
+        left:70%;
+        top:0%;
+        height:100%;
+        overflow:hidden;
+        
+        
+        }
+        
+        .slide2
+    {
+        
+        position:absolute;
+        left:85%;
+        height:100%;
+        top:0%;
+        overflow:hidden;
+   }
+        
+        #logo
+        {
+            position:absolute;
+            left:0%;
+            width:100%;
+            height:100%;
+            overflow:hidden;
+            }
+			
+		--	.left{position:absolute;
+            left:0%;
+            width:100%;
+            height:100%;}
+     
+    #log{width=200px; position:absolute; left:20px; }
+   #ride{width=400px; position:absolute; left:150px; font-size:75px; font-family:Baskerville Old Face
+   ,cursive; font-weight:bold;}
+    #cool{position:absolute; left:50px; top:150px; font-size:60px; font-family:Lucida calligraphy; font-weight:bold; }
+	#po{position:absolute; left:300px; top:250px; font-size:60px; font-family:Imprint MT shadow,italic; font-weight:bold;}
+	#combo{background-color:black; width:1200px; height:130px}
+	</style>
+
+
+</head>
+<body style="overflow: hidden" bgcolor="#B2CEEA" height=300px width=300px border=3px> 
+<div id="cool" >
+
+Its's COOL,
+
+</div>
+<div id="po">To POOL...</div>
+<div id="combo">
+<div id="log" style="border:3px solid black">
+<img src="ShowImage.jpg" width=120px height=120px></div>
+<div id="ride" style="color:white">RideSmart.com</div></div>
+<div id="carpool">
+<h2 align=center style="color:white">CARPOOL</h2>
+<table>
+<tr>
+<td>
+<img src="395px--Pool_It-_Sign_North_of_Vancouver,_Washington,_Was_a_Reminder_That_the_Gasoline_Shortage_Was_Not_over_in_March,_1974_and_Sharing_Rides_Was_a_Good_Idea_03-1974.jpg" width=150px height=170px>
+</td>
+<td>
+<p style="color:white">"Pool It" Sign North of Vancouver, Washington, Was a Reminder That the Gasoline Shortage Was Not over in March, 1974 and Sharing Rides Was a Good Idea...It encouraged carpooling during the gas shortage resulting from the 1973 oil crisis..</p>
+
+</td>
+</tr>
+
+</table>
+</div>
+<div id="tourpool">
+<h2 align=center style="color:white">TOURPOOL</h2>
+<table>
+<tr>
+<td>
+<p style="color:white">Tourpool is a completely new and innovative idea of planning your tours online...This will save your costs on travel agents and it is a completely safe n modern method of encouraging group tours...</p>
+</td>
+</tr>
+
+</table>
+</div>
+<div id="slide">
+<a href="javascript:gotoshow()"><img src="food1.jpg" name="slide" border=0 width=250 height=300></a>
+<script>
+<!--
+
+//configure the paths of the images, plus corresponding target links
+slideshowimages("carpool.png","carsharing photo.jpg","uow095854.jpg","carpool_2.jpg","cp1.jpg")
+//slideshowlinks("C:\Users\Arti Prasad\Desktop\New folder\","http://food.epicurious.com/run/recipe/view?id=10092","http://food.epicurious.com/run/recipe/view?id=100975","http://food.epicurious.com/run/recipe/view?id=2876","http://food.epicurious.com/run/recipe/view?id=20010")
+
+//configure the speed of the slideshow, in miliseconds
+var slideshowspeed=2000
+
+var whichlink=0
+var whichimage=0
+function slideit(){
+if (!document.images)
+return
+document.images.slide.src=slideimages[whichimage].src
+whichlink=whichimage
+if (whichimage<slideimages.length-1)
+whichimage++
+else
+whichimage=0
+setTimeout("slideit()",slideshowspeed)
+}
+slideit()
+
+//-->
+</script>
+</div>
+
+
+
+
+<a href="logincarpool.php">
+<img src="blue12.jpg" id="slide1"  class="slide1" /></a>
+<div id="slider">
+<a href="http://localhost/tourpool/tourlogin.php">
+<img src="tourpoolj1.jpg" id="slide2" class="slide2"  /></a>
+
+</div>
+
+</body>
+</html>
